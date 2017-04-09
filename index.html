@@ -1,0 +1,56 @@
+<html>
+
+<!-- 屏幕适配 -->
+<meta name="viewport" content="width=device-width,user-scalable=no,target-densitydpi=medium-dpi" charset="utf-8" /> 
+<title>手势密码</title>
+<script type="text/javascript">
+	//设置百分比布局
+	var oHtml=document.getElementsByTagName('html')[0];
+	oHtml.style.fontSize=document.documentElement.clientWidth/10+'px';
+</script>
+<script type="text/javascript" src='js/jquery-2.1.4.min.js'></script>
+<script type="text/javascript" src='js/jq-gesture.js'></script>
+ <link href="css/index.css" rel="stylesheet" type="text/css"/>
+<body>
+<section class='page'>
+	<div class='nav'>
+		<p>手势密码</p>
+	</div>
+	<div id='content'>
+		<div id='canvas'>
+		</div>
+		<div id='notice'>
+			<span class='text'>
+				请输入手势密码
+			</span>
+		</div>
+		<div id='operate'>
+			<dl>
+				<dt>
+					<label>
+						<input type='radio' name='choose' checked='checked' operate='set'/>&nbsp;&nbsp;&nbsp;设置密码
+					</label>
+				</dt>
+				<dt>
+					<label>
+						<input type='radio' name='choose' operate='valid'/>&nbsp;&nbsp;&nbsp;验证密码
+					</label>
+				</dt>
+			</dl>
+		</div>
+	</div>
+<script type="text/javascript">
+	var config={
+        zindex :100,
+        roundRadii:16,
+        pointRadii:2,
+        space:30,
+        width:200,
+        height:200,
+        lineColor:"#FFA726",
+        backgroundColor:"#F0F0F2",
+        color:"#FFFFFF"
+    };
+	$("#canvas").passwdValid(config);
+</script>
+</section>

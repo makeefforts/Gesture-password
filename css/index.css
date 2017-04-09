@@ -1,0 +1,21 @@
+*{margin: 0;padding: 0;}
+body{margin: 0;padding: 0;font-size: 0.4rem;position: relative;font-family: "微软雅黑"}
+.page{width:100%;height:100%;overflow: auto;position: absolute;left:0;top:0;display: -none;opacity:0;-webkit-transform:translateY(1.5rem);transform:translateY(50px);background:#F0F0F2;animation:1s 0.5s tree;animation-fill-mode:forwards;-webkit-animation: 1s 0.5s tree;-webkit-animation-fill-mode:forwards;}
+.page .nav{width: 100%;line-height:1.5rem;background: #F8F8F8;text-align: center;margin: 0 auto;}
+.page #canvas{margin:1.3rem auto;text-align: center;}
+.page #notice{text-align: center;margin: 0 auto;}
+.page #operate{margin: 1.2rem auto;}
+.page #operate dl{padding-left: 1.6rem;}
+.page #operate dt{margin-top: 0.5rem;}
+@-webkit-keyframes tree{
+	100%{
+		-webkit-transform:translateY(0px);
+		opacity:1;
+	}
+}
+@-keyframes tree{
+	100%{
+		-webkit-transform:translateY(0px);
+		opacity:1;
+	}
+}
