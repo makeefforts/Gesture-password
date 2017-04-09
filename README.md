@@ -1,30 +1,32 @@
-��Crome �ƶ�ģ�����²��ԡ�
+【Crome 移动模拟器下测试】
+
+demo演示地址：https://makeefforts.github.io/Gesture-password/index.html
 
 
-һ��˼·��
+一、思路：
 
-1.�ƶ���ҳ�沼�֡����˼򵥵���Ļ����Ͱٷֱ�����Ӧ���֡�
+1.移动端页面布局。做了简单的屏幕适配和百分比自适应布局。
 
-2.JS��̬����canvas��������ʼ��������������ͼ����ʼ���ƹ��̡�
+2.JS动态创建canvas画布，初始化绘制手势密码图，开始绘制过程。
 
-3.�洢���ƽ����
+3.存储绘制结果。
 
-4.����ģ��ʵ��
+4.功能模块实现
 
-  ģ��ѡ��
+  模块选择：
 
   operate=$("#operate input:checked").attr('operate')
 
-  1���������롾operate=='set'��
+  1）设置密码【operate=='set'】
 
-  2����֤���롾(operate=='valid'��
+  2）验证密码【(operate=='valid'】
 
-����������ʾ��
+二、调试提示：
 
-1.���Ի�������Crome �ƶ�ģ�����²��ԡ�
+1.调试环境：【Crome 移动模拟器下测试】
 
-2.������ʾ��
+2.调试提示：
 
-1��Ϊ�˷�����ԣ������趨Ϊ��ˢ�»����localStorage��
+1）为了方便调试，代码设定为：刷新会清空localStorage；
 
-2�����������ѡ���������롱ѡ�����ʾ�������ã��Ƿ��������룬�����ʱ���»��Ƶ����벻���Ϲ�������ԭ��������
+2）设置密码后，选择“设置密码”选项，会提示你已设置，是否重置密码，如果此时重新绘制的密码不符合规则，则保留原来的密码
